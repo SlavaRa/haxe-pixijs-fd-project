@@ -21,7 +21,7 @@ before_build:
 build: off
 build_script:
 - cp "%LIB_PATH%"/libs/perf.min.js $(BaseDir)/Projects/"%NAME%"/bin/perf.min.js
-- cp "%LIB_PATH%"/libs/pixi-spine.min.js $(BaseDir)/Projects/"%NAME%"/bin/pixi-spine.min.js
+- cp "%LIB_PATH%"/libs/pixi-spine.js $(BaseDir)/Projects/"%NAME%"/bin/pixi-spine.js
 - cp "%LIB_PATH%"/libs/pixi-tilemap.min.js $(BaseDir)/Projects/"%NAME%"/bin/pixi-tilemap.min.js
 - cp "%LIB_PATH%"/libs/pixi.min.js $(BaseDir)/Projects/"%NAME%"/bin/pixi.min.js
 - 7z a "%NAME%".zip $(BaseDir)
