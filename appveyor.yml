@@ -14,7 +14,7 @@ init:
 - git clone -q --branch=master https://github.com/pixijs/pixi-haxe.git "%LIB_PATH%"
 - cd "%LIB_PATH%"
 - git checkout tags/"%VERSION%" -b "%VERSION%"
-- git clone -q --branch=master https://github.com/SlavaRa/fdproject-haxe-pixijs.git c:\projects\fdproject-haxe-pixijs
+- git clone -q https://github.com/SlavaRa/fdproject-haxe-pixijs.git c:\projects\fdproject-haxe-pixijs
 - git checkout -qf ff2a4378a3dfc13402d47e79049a20ea7bcd8199
 matrix:
   fast_finish: true
