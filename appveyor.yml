@@ -15,8 +15,6 @@ init:
 - cd "%LIB_PATH%"
 - git checkout tags/"%VERSION%" -b "%VERSION%"
 - cd %APPVEYOR_BUILD_FOLDER%
-- git clone https://github.com/SlavaRa/fdproject-haxe-pixijs.git c:\projects\fdproject-haxe-pixijs
-- git checkout -qf ff2a4378a3dfc13402d47e79049a20ea7bcd8199
 matrix:
   fast_finish: true
 before_build:
