@@ -1,6 +1,6 @@
 os: Visual Studio 2015
 environment:
-  VERSION: 4.2.1
+  VERSION: 4.3.0
   NAME: 331 Haxe - PixiJS Project
   DESC: A PixiJS v4.x project written in the Haxe language
   INFO: https:\/\/github.com\/SlavaRa\/fdproject-haxe-pixijs
