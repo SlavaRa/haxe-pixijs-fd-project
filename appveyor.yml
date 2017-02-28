@@ -1,6 +1,6 @@
 os: Visual Studio 2015
 environment:
-  VERSION: 4.3.0
+  VERSION: 4.3.4
   NAME: 331 Haxe - PixiJS Project
   DESC: A PixiJS v4.x project written in the Haxe language
   INFO: https:\/\/github.com\/SlavaRa\/fdproject-haxe-pixijs
@@ -32,7 +32,7 @@ build_script:
 - set /p CHECKSUM=<checksum.md5
 - rm checksum.md5
 - mv %APPMAN_TEMPLATE% %APPMAN_CONFIG_XML%
-- sed -i -e s/_ID_/template/g %APPMAN_CONFIG_XML%
+- sed -i -e "s/_ID_/template/g" %APPMAN_CONFIG_XML%
 - sed -i -e "s/_NAME_/%NAME%/g" %APPMAN_CONFIG_XML%
 - sed -i -e "s/_DESC_/%DESC%/g" %APPMAN_CONFIG_XML%
 - sed -i -e "s/_VERSION_/%VERSION%/g" %APPMAN_CONFIG_XML%
