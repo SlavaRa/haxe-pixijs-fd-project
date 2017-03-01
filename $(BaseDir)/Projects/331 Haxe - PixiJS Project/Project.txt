@@ -1,1 +1,1 @@
-A PixiJS v4.4.0 project written in the Haxe language
+A PixiJS v4.4.1 project written in the Haxe language
