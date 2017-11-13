@@ -1,6 +1,6 @@
 os: Visual Studio 2015
 environment:
-  VERSION: 4.4.1
+  VERSION: 4.5.4
   NAME: 331 Haxe - PixiJS Project
   DESC: A PixiJS v4.x project written in the Haxe language
   INFO: https:\/\/github.com\/SlavaRa\/fdproject-haxe-pixijs
@@ -20,10 +20,19 @@ matrix:
 before_build:
 build: off
 build_script:
+- cp "%LIB_PATH%"/libs/dragonBones.js $(BaseDir)/Projects/"%NAME%"/bin/dragonBones.js
+- cp "%LIB_PATH%"/libs/dragonBones.min.js $(BaseDir)/Projects/"%NAME%"/bin/dragonBones.min.js
+- cp "%LIB_PATH%"/libs/dragonBonesPixi.js $(BaseDir)/Projects/"%NAME%"/bin/dragonBonesPixi.js
+- cp "%LIB_PATH%"/libs/dragonBonesPixi.min.js $(BaseDir)/Projects/"%NAME%"/bin/dragonBonesPixi.min.js
 - cp "%LIB_PATH%"/libs/perf.min.js $(BaseDir)/Projects/"%NAME%"/bin/perf.min.js
+- cp "%LIB_PATH%"/libs/pixi-extras-filters.min.js $(BaseDir)/Projects/"%NAME%"/bin/pixi-extras-filters.min.js
 - cp "%LIB_PATH%"/libs/pixi-spine.js $(BaseDir)/Projects/"%NAME%"/bin/pixi-spine.js
+- cp "%LIB_PATH%"/libs/pixi-spine.js.map $(BaseDir)/Projects/"%NAME%"/bin/pixi-spine.js.map
 - cp "%LIB_PATH%"/libs/pixi-tilemap.min.js $(BaseDir)/Projects/"%NAME%"/bin/pixi-tilemap.min.js
+- cp "%LIB_PATH%"/libs/pixi.js $(BaseDir)/Projects/"%NAME%"/bin/pixi.js
+- cp "%LIB_PATH%"/libs/pixi.js.map $(BaseDir)/Projects/"%NAME%"/bin/pixi.js.map
 - cp "%LIB_PATH%"/libs/pixi.min.js $(BaseDir)/Projects/"%NAME%"/bin/pixi.min.js
+- cp "%LIB_PATH%"/libs/pixi.min.js.map $(BaseDir)/Projects/"%NAME%"/bin/pixi.min.js.map
 - 7z a "%NAME%".zip $(BaseDir)
 - mv "%NAME%".zip "%NAME%".fdz
 - md5sum "%NAME%".fdz > checksum.md5
