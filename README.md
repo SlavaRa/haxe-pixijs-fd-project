@@ -1,4 +1,4 @@
-Haxe [PixiJS v4.5.4](https://github.com/pixijs/pixi-haxe) Application Project Template for [FlashDevelop](http://flashdevelop.org)/[HaxeDevelop](https://haxedevelop.org/)
+Haxe [PixiJS v4.7.1](https://github.com/pixijs/pixi-haxe) Application Project Template for [FlashDevelop](http://flashdevelop.org)/[HaxeDevelop](https://haxedevelop.org/)
 ========================
 
 ### Installation
